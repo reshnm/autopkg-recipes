@@ -41,15 +41,20 @@
          </dict>
          <dict>
             <key>Processor</key>
-            <string>Unarchiver</string>
+            <string>InstallFromDMG</string>
             <key>Arguments</key>
             <dict>
-               <key>archive_path</key>
+               <key>dmg_path</key>
                <string>%pathname%</string>
-               <key>destination_path</key>
-               <string>%pkgroot%/Library/Java/JavaVirtualMachines</string>
-               <key>purge_destination</key>
-               <true />
+               <key>items_to_copy</key>
+                <array>
+                    <dict>
+                        <key>source_item</key>
+                        <string>sapnachine-jdk-%version%.jdk</string>
+                        <key>destination_path</key>
+                        <string>%pkgroot%/Library/Java/JavaVirtualMachines</string>
+                    </dict>
+                </array>
             </dict>
          </dict>
          <dict>
