@@ -50,7 +50,7 @@
                 <array>
                     <dict>
                         <key>source_item</key>
-                        <string>sapnachine-jdk-%version%.jdk</string>
+                        <string>sapmachine-jdk-%version%.jdk</string>
                         <key>destination_path</key>
                         <string>%pkgroot%/Library/Java/JavaVirtualMachines</string>
                     </dict>
